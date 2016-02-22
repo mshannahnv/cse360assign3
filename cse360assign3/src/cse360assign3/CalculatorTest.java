@@ -72,7 +72,12 @@ public class CalculatorTest {
     public void testGetHistory() {
         Calculator testCalc = new Calculator();
         
-        assertEquals("",testCalc.getHistory());
+        testCalc.add(10);
+        testCalc.subtract(2);
+        testCalc.multiply(2);
+        testCalc.divide(8);
+        
+        assertEquals("0 + 10 - 2 * 2 / 8",testCalc.getHistory());
     }
 
 }
