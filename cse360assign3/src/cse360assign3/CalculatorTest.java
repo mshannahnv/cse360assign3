@@ -71,6 +71,8 @@ public class CalculatorTest {
     @Test
     public void testGetHistory() {
         Calculator testCalc = new Calculator();
+        
+        assertEquals("",testCalc.getHistory());
     }
 
 }
